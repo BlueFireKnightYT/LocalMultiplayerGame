@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SpawnKey : MonoBehaviour
+public class Gamemanager : MonoBehaviour
 {
     public int pressedButtons = 0;
     public int neededButtons = 0;
