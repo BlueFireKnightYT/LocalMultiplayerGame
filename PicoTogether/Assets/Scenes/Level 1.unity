@@ -966,7 +966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Key
   pressedButtons: 0
-  neededButtons: 0
+  neededButtons: 2
 --- !u!4 &893233279
 Transform:
   m_ObjectHideFlags: 0
