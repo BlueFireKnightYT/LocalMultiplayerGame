@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpHeight;
-    [SerializeField] LayerMask groundLayer;
+    [SerializeField] LayerMask jumpLayers;
     [SerializeField] Transform groundCheck;
 
     float InputX;
@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
             new Vector2(1f, 0.5f),
             CapsuleDirection2D.Horizontal,
             0f,
-            groundLayer
+            jumpLayers
         );
 
         return hits.Length > 0;

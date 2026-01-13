@@ -1,10 +1,16 @@
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class sosBtn : MonoBehaviour
 {
+    public GameObject Panel;
+    public GameObject Settings;
+    public GameObject Controls;
     public void sos()
     {
-        Debug.Log("not banana = skill issue");
+        Panel.SetActive(!Panel.activeSelf);
+        Settings.SetActive(false);
+        Controls.SetActive(false);
     }
 }

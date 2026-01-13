@@ -374,9 +374,9 @@ GameObject:
   - component: {fileID: 407033531}
   - component: {fileID: 407033530}
   - component: {fileID: 407033529}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -396,9 +396,9 @@ MonoBehaviour:
   rb: {fileID: 407033533}
   speed: 5
   jumpHeight: 5
-  groundLayer:
+  jumpLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   groundCheck: {fileID: 2051123633}
 --- !u!114 &407033530
 MonoBehaviour:
@@ -1099,7 +1099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1403091773}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1115,7 +1115,7 @@ Transform:
   m_GameObject: {fileID: 1403091772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1665,9 +1665,9 @@ GameObject:
   - component: {fileID: 2049441207}
   - component: {fileID: 2049441214}
   - component: {fileID: 2049441213}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1872,9 +1872,9 @@ MonoBehaviour:
   rb: {fileID: 2049441209}
   speed: 5
   jumpHeight: 5
-  groundLayer:
+  jumpLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   groundCheck: {fileID: 1403091773}
 --- !u!114 &2049441214
 MonoBehaviour:
@@ -1995,7 +1995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2051123633}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2011,7 +2011,7 @@ Transform:
   m_GameObject: {fileID: 2051123632}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
