@@ -4,8 +4,13 @@ using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
 public class ControlsBtn : MonoBehaviour
 {
+    public GameObject Panel;
+    public GameObject Settings;
+    public GameObject SOS;
     public void Controls()
     {
-        Debug.Log("banaana");
+        Panel.SetActive(!Panel.activeSelf);
+        Settings.SetActive(false);
+        SOS.SetActive(false);
     }
 }
