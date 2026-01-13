@@ -555,7 +555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.24100001}
   m_AnchorMax: {x: 0.305, y: 1}
-  m_AnchoredPosition: {x: 642.4, y: -0.33369446}
+  m_AnchoredPosition: {x: 642.4, y: -0.33370972}
   m_SizeDelta: {x: -5.9956055, y: -0.66739655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &541835310
@@ -882,6 +882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickExample
   Panel: {fileID: 1462720367}
+  Settings: {fileID: 541835308}
+  SOS: {fileID: 2061183728}
 --- !u!1 &604171850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,7 +1030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19cd300fd3f3eef4695fe0e325de660e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::sosBtn
-  Panel: {fileID: 0}
+  Panel: {fileID: 2061183728}
+  Settings: {fileID: 541835308}
+  Controls: {fileID: 1462720367}
 --- !u!1 &616285997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,7 +4564,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf72e2cefc347e4e90d9a74a3964695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SettingsBtn
-  Panel: {fileID: 0}
+  Panel: {fileID: 541835308}
+  SOS: {fileID: 2061183728}
+  Controls: {fileID: 1462720367}
 --- !u!1 &2061183728
 GameObject:
   m_ObjectHideFlags: 0
