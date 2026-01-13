@@ -9,7 +9,9 @@ public class Gamemanager : MonoBehaviour
     public int neededButtons = 0;
     public bool key = false;
 
-    public SpriteRenderer doorSprite;
+    public SpriteRenderer doorSr;
+
+    public Sprite doorOpen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

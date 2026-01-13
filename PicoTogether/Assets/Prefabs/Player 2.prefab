@@ -87,7 +87,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1585000227611782990, guid: 3c633bef106a5bc4a9611e3f54962b80, type: 3}
   m_Color: {r: 0, g: 1, b: 0.9572439, a: 1}
@@ -109,7 +109,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ed28c30a6d5f44d46b63424a6b236782, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -351,6 +351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
   gm: {fileID: 8686267067328574417, guid: 921175c61b8d4fb49a0b0227b7fff7f4, type: 3}
+  btnNotPressed: {fileID: -4527129466267022211, guid: 26cd59384d6fc69408896d22713852da, type: 3}
+  btnPressed: {fileID: 6576783372254293476, guid: a46c7abf2df264a4bbbd990d8345f378, type: 3}
 --- !u!1 &8720300426217770793
 GameObject:
   m_ObjectHideFlags: 0
