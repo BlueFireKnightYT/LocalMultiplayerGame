@@ -21,6 +21,7 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (other.CompareTag("key"))
         {
+            Destroy(other.gameObject);
             gm.key = true;
             gm.doorSr.sprite = gm.doorOpen;
         }
