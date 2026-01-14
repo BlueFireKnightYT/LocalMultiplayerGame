@@ -19,6 +19,10 @@ public class PlayerCollision : MonoBehaviour
             btnSprite = other.GetComponent<SpriteRenderer>();
             btnSprite.sprite = btnPressed;
         }
+        else if (other.CompareTag("Lever"))
+        {
+
+        }
         else if (other.CompareTag("key"))
         {
             Destroy(other.gameObject);
