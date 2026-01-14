@@ -26,5 +26,11 @@ public class Gamemanager : MonoBehaviour
             Instantiate(pref_Key, new Vector2(-0.25f, -1.75f), Quaternion.identity);
             pressedButtons = 9999;
         }
+
+        if (enteredDoor >= 2)
+        {
+            Debug.Log("nextLeeeeeee");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

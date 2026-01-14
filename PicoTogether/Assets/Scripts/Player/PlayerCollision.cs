@@ -9,18 +9,6 @@ public class PlayerCollision : MonoBehaviour
     public Sprite btnNotPressed;
     public Sprite btnPressed;
 
-    int buildindex = 0;
-
-    private void Update()
-    {
-        if (gm.enteredDoor >= 2)
-        {
-            Debug.Log("nextLeeeeeee");
-            buildindex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(buildindex + 1);
-        }
-
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("button"))

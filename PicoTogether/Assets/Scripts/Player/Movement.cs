@@ -42,4 +42,12 @@ public class Movement : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
         }
     }
+
+    public void Interact(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+
+        }
+    }
 }
