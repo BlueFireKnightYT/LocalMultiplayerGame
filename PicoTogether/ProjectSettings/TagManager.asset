@@ -8,7 +8,7 @@ TagManager:
   - button
   - key
   - door
-  - Lever
+  - lever
   layers:
   - Default
   - TransparentFX

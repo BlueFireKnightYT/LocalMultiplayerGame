@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     [SerializeField] LayerMask jumpLayers;
     [SerializeField] Transform groundCheck;
 
+    public bool performed;
+
     float InputX;
 
 
@@ -45,9 +47,15 @@ public class Movement : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.started)
         {
-
+            performed = true;
+            Debug.Log("on");
+        }
+        if (context.canceled)
+        {
+            performed = false;
+            Debug.Log("off");
         }
     }
 }
