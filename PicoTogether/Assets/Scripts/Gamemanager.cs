@@ -6,6 +6,7 @@ public class Gamemanager : MonoBehaviour
 {
     public int pressedButtons = 0;
     public int neededButtons = 0;
+    public int enteredDoor = 0;
     public bool key = false;
 
     public SpriteRenderer doorSr;
@@ -23,7 +24,7 @@ public class Gamemanager : MonoBehaviour
         if (pressedButtons == neededButtons)
         {
             Instantiate(pref_Key, new Vector2(-0.25f, -1.75f), Quaternion.identity);
-            pressedButtons = 3;
+            pressedButtons = 9999;
         }
     }
 }
