@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
     [SerializeField] Rigidbody2D rb;
+
     [SerializeField] float speed = 5f;
     [SerializeField] float jumpHeight;
     [SerializeField] LayerMask jumpLayers;
@@ -16,7 +17,7 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        rb.linearVelocityX = InputX * speed;
+         rb.linearVelocityX = InputX * speed;
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -28,7 +29,7 @@ public class Movement : MonoBehaviour
         var hits = Physics2D.OverlapCapsuleAll
         (
             groundCheck.position,
-            new Vector2(1f, 0.5f),
+            new Vector2(0.1f, 0.5f),
             CapsuleDirection2D.Horizontal,
             0f,
             jumpLayers

@@ -13,17 +13,13 @@ public class Gamemanager : MonoBehaviour
     public GameObject pref_Key;
     public Sprite doorOpen;
 
-
-    private void Start()
-    {
-        
-    }
+    public Transform keyTrans;
 
     void Update()
     {
         if (pressedButtons == neededButtons)
         {
-            Instantiate(pref_Key, new Vector2(-0.25f, -1.75f), Quaternion.identity);
+            Instantiate(pref_Key, keyTrans);
             pressedButtons = 9999;
         }
 
