@@ -4,23 +4,13 @@ using UnityEngine.SceneManagement;
 public class PlayerCollision : MonoBehaviour
 {
     public Gamemanager gm;
+    public Movement m;
+
     SpriteRenderer btnSprite;
 
     public Sprite btnNotPressed;
     public Sprite btnPressed;
 
-    int buildindex = 0;
-
-    private void Update()
-    {
-        if (gm.enteredDoor >= 2)
-        {
-            Debug.Log("nextLeeeeeee");
-            buildindex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(buildindex + 1);
-        }
-
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("button"))
@@ -29,7 +19,7 @@ public class PlayerCollision : MonoBehaviour
             btnSprite = other.GetComponent<SpriteRenderer>();
             btnSprite.sprite = btnPressed;
         }
-        else if (other.CompareTag("Lever"))
+        else if (other.CompareTag("lever"))
         {
 
         }
@@ -46,6 +36,13 @@ public class PlayerCollision : MonoBehaviour
                 gm.enteredDoor++;
                 Debug.Log(gm.enteredDoor);
                 Destroy(this.gameObject);
+            }
+        }
+        else if (other.CompareTag("lever"))
+        {
+            if (m.performed == true)
+            {
+
             }
         }
     }

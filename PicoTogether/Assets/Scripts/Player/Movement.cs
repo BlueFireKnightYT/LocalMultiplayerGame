@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
     [SerializeField] LayerMask jumpLayers;
     [SerializeField] Transform groundCheck;
 
+    public bool performed;
+
     float InputX;
 
 
@@ -40,6 +42,20 @@ public class Movement : MonoBehaviour
         if (context.performed && isGrounded() == true)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpHeight);
+        }
+    }
+
+    public void Interact(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            performed = true;
+            Debug.Log("on");
+        }
+        if (context.canceled)
+        {
+            performed = false;
+            Debug.Log("off");
         }
     }
 }

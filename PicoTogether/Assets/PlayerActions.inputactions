@@ -23,6 +23,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "b473747a-1177-4ba5-a19b-c1f58008024a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -91,6 +100,17 @@
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72408fbe-52f9-4306-ac14-221f515b5113",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -98,6 +118,15 @@
             "name": "Player2",
             "id": "67307eb8-e0a0-47cc-b229-586aed5658f4",
             "actions": [
+                {
+                    "name": "Move2",
+                    "type": "Value",
+                    "id": "9c7073ac-6c72-40c6-b6c0-1b6ceba9cb1b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
                 {
                     "name": "Jump2",
                     "type": "Button",
@@ -108,13 +137,13 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Move2",
-                    "type": "Value",
-                    "id": "9c7073ac-6c72-40c6-b6c0-1b6ceba9cb1b",
-                    "expectedControlType": "Vector2",
+                    "name": "Interact2",
+                    "type": "Button",
+                    "id": "62c4cdb6-c017-41b4-a0ce-1642ca7da6f0",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -183,6 +212,17 @@
                     "action": "Move2",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "99d9537d-16ae-4002-ba4b-b3976a848a19",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
