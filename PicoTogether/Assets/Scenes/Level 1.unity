@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 52235657}
   - component: {fileID: 52235656}
   m_Layer: 5
-  m_Name: SettingsBtn
+  m_Name: MenuBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -80, y: -80}
-  m_SizeDelta: {x: 75, y: 75}
+  m_AnchoredPosition: {x: -64, y: -64}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &52235656
 MonoBehaviour:
@@ -439,6 +439,68 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!4 &177822878 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+  m_PrefabInstance: {fileID: 559335479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &559335479
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1690949842481839599, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9163695173373244080, guid: 916b3160398ac0c418155b09528804ba, type: 3}
+      propertyPath: m_Name
+      value: KeySpawn
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 916b3160398ac0c418155b09528804ba, type: 3}
 --- !u!1 &627913420
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,8 +855,8 @@ Tilemap:
   - first: {x: -2, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileIndex: 9
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -863,8 +925,8 @@ Tilemap:
   - first: {x: 0, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileIndex: 9
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -962,7 +1024,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 55196bd0272505f42906a62895b7c824, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: 2a7c10c5af4b22c4bb4b4647905255aa, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -970,8 +1032,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: d52395941befa0f499674b2239b19423, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b54f4a28e1ba5cf40b395b222973b28c, type: 2}
   - m_RefCount: 1
@@ -991,10 +1053,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 13
     m_Data: {fileID: 1239564410021751126, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: -4284365681224967690, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 3382213792637615925, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 1
@@ -1656,7 +1718,7 @@ GameObject:
   - component: {fileID: 1860734752}
   - component: {fileID: 1860734751}
   m_Layer: 5
-  m_Name: Settings
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1691,10 +1753,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1943,9 +2005,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1217633745}
     - target: {fileID: 8686267067328574417, guid: 921175c61b8d4fb49a0b0227b7fff7f4, type: 3}
-      propertyPath: pressedButtons
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: keyTrans
+      value: 
+      objectReference: {fileID: 177822878}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2055,3 +2117,4 @@ SceneRoots:
   - {fileID: 1860734754}
   - {fileID: 1322470052}
   - {fileID: 1093932659}
+  - {fileID: 559335479}

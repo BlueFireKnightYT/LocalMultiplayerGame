@@ -388,11 +388,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45134bd2585a4c4f94dc008eab5838f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
-  gm: {fileID: 8686267067328574417, guid: 921175c61b8d4fb49a0b0227b7fff7f4, type: 3}
+  gm: {fileID: 0}
   m: {fileID: 3690128509734167512}
   btnNotPressed: {fileID: -4527129466267022211, guid: 26cd59384d6fc69408896d22713852da, type: 3}
   btnPressed: {fileID: 6576783372254293476, guid: a46c7abf2df264a4bbbd990d8345f378, type: 3}
-  lineMaker: {fileID: 1068248621328742607, guid: ec7f2569c550db74cb9f3bc68918c9a5, type: 3}
+  lineMaker: {fileID: 0}
 --- !u!114 &5258655749294207512
 MonoBehaviour:
   m_ObjectHideFlags: 0
