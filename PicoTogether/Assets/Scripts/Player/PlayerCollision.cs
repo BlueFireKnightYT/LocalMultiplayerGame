@@ -15,7 +15,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.CompareTag("button"))
         {
-            gm.pressedButtons++;
+            gm.pressedButtons += 1;
             btnSprite = other.GetComponent<SpriteRenderer>();
             btnSprite.sprite = btnPressed;
         }
@@ -37,7 +37,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (other.CompareTag("button"))
         {
-            gm.pressedButtons =- 1;
+            gm.pressedButtons -= 1;
             btnSprite = other.GetComponent<SpriteRenderer>();
             btnSprite.sprite = btnNotPressed;
         }

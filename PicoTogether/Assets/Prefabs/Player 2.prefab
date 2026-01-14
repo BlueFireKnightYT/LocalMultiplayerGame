@@ -333,7 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 2893673129945158936}
   speed: 5
-  jumpHeight: 5
+  jumpHeight: 10
   jumpLayers:
     serializedVersion: 2
     m_Bits: 192

@@ -48,4 +48,5 @@ MonoBehaviour:
   pressedButtons: 0
   neededButtons: 2
   key: 0
-  doorSprite: {fileID: 247685548753694681, guid: 6011e97fae076064f8373109557c2bd9, type: 3}
+  doorSr: {fileID: 0}
+  doorOpen: {fileID: 100713337563286907, guid: e66cc358fb8e9064d94912f3d4ae8346, type: 3}
