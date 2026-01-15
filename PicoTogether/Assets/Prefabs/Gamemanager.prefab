@@ -44,9 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 736e63b746178db4c8666ebd9c150a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Key
-  pref_Key: {fileID: 2699642721821389689, guid: 51710767a1148b14fbf31e544f8efc10, type: 3}
   pressedButtons: 0
   neededButtons: 2
+  enteredDoor: 0
   key: 0
   doorSr: {fileID: 0}
+  pref_Key: {fileID: 2699642721821389689, guid: 51710767a1148b14fbf31e544f8efc10, type: 3}
   doorOpen: {fileID: 100713337563286907, guid: e66cc358fb8e9064d94912f3d4ae8346, type: 3}
+  keyTrans: {fileID: 0}

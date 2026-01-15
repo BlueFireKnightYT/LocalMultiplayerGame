@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2537642647970728835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4809813980103584141}
+  m_Layer: 7
+  m_Name: RopePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4809813980103584141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537642647970728835}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.331, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 803277482079455279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5600985704217918204
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,10 +44,10 @@ GameObject:
   - component: {fileID: 1224104941462502709}
   - component: {fileID: 2893673129945158936}
   - component: {fileID: 2978508205595430116}
-  - component: {fileID: 5258655749294207512}
   - component: {fileID: 6604122415023310052}
   - component: {fileID: 3690128509734167512}
   - component: {fileID: 513359130720764652}
+  - component: {fileID: 5258655749294207512}
   m_Layer: 7
   m_Name: Player 2
   m_TagString: player
@@ -38,6 +69,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 796682801209454995}
+  - {fileID: 4809813980103584141}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3989770571565530111
@@ -133,7 +165,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0035738274, y: 0.35264307}
+  m_Offset: {x: -0.0020440817, y: 0.40772554}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -143,7 +175,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.23903055, y: 0.70528615}
+  m_Size: {x: 0.36449623, y: 0.8154511}
   m_EdgeRadius: 0
 --- !u!50 &2893673129945158936
 Rigidbody2D:
@@ -194,21 +226,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5258655749294207512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5600985704217918204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d56048cc39f06784c84e58f90410589e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimManager
-  rb: {fileID: 2893673129945158936}
-  anim: {fileID: 2978508205595430116}
-  sr: {fileID: 3989770571565530111}
 --- !u!114 &6604122415023310052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +331,26 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 9c7073ac-6c72-40c6-b6c0-1b6ceba9cb1b
     m_ActionName: 'Player2/Move2[/Keyboard/numpad8,/Keyboard/numpad5,/Keyboard/numpad4,/Keyboard/numpad6]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b473747a-1177-4ba5-a19b-c1f58008024a
+    m_ActionName: 'Player/Interact[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3690128509734167512}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 62c4cdb6-c017-41b4-a0ce-1642ca7da6f0
+    m_ActionName: Player2/Interact2
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player2
@@ -333,11 +370,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 2893673129945158936}
   speed: 5
-  jumpHeight: 6
+  jumpHeight: 7.3
   jumpLayers:
     serializedVersion: 2
     m_Bits: 192
   groundCheck: {fileID: 796682801209454995}
+  performed: 0
 --- !u!114 &513359130720764652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,9 +388,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45134bd2585a4c4f94dc008eab5838f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
-  gm: {fileID: 8686267067328574417, guid: 921175c61b8d4fb49a0b0227b7fff7f4, type: 3}
+  gm: {fileID: 0}
+  m: {fileID: 3690128509734167512}
   btnNotPressed: {fileID: -4527129466267022211, guid: 26cd59384d6fc69408896d22713852da, type: 3}
   btnPressed: {fileID: 6576783372254293476, guid: a46c7abf2df264a4bbbd990d8345f378, type: 3}
+  lineMaker: {fileID: 0}
+--- !u!114 &5258655749294207512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5600985704217918204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56048cc39f06784c84e58f90410589e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimManager
+  rb: {fileID: 2893673129945158936}
+  anim: {fileID: 2978508205595430116}
+  sr: {fileID: 3989770571565530111}
 --- !u!1 &8720300426217770793
 GameObject:
   m_ObjectHideFlags: 0

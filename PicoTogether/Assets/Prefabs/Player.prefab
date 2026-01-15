@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4831346512941517533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379068475132362869}
+  m_Layer: 7
+  m_Name: RopePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1379068475132362869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4831346512941517533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.331, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2648988407941643541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5279764122100208904
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,6 +79,7 @@ GameObject:
   - component: {fileID: 122232902471527522}
   - component: {fileID: 5714024341792227127}
   - component: {fileID: 7900613615802462653}
+  - component: {fileID: 6909601882588718181}
   m_Layer: 7
   m_Name: Player
   m_TagString: player
@@ -69,6 +101,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5626457201568445361}
+  - {fileID: 1379068475132362869}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6758814378261148707
@@ -164,7 +197,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0035738274, y: 0.35264307}
+  m_Offset: {x: -0.0066339076, y: 0.40619555}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -174,7 +207,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.23903055, y: 0.70528615}
+  m_Size: {x: 0.3614359, y: 0.8123911}
   m_EdgeRadius: 0
 --- !u!50 &7149894691493169407
 Rigidbody2D:
@@ -345,6 +378,26 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9c7073ac-6c72-40c6-b6c0-1b6ceba9cb1b
     m_ActionName: 'Player2/Move2[/Keyboard/i,/Keyboard/k,/Keyboard/j,/Keyboard/l]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5714024341792227127}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: Interact
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b473747a-1177-4ba5-a19b-c1f58008024a
+    m_ActionName: 'Player/Interact[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 62c4cdb6-c017-41b4-a0ce-1642ca7da6f0
+    m_ActionName: Player2/Interact2
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -364,11 +417,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   rb: {fileID: 7149894691493169407}
   speed: 5
-  jumpHeight: 6
+  jumpHeight: 7.3
   jumpLayers:
     serializedVersion: 2
     m_Bits: 192
   groundCheck: {fileID: 5626457201568445361}
+  performed: 0
 --- !u!114 &7900613615802462653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,5 +436,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   gm: {fileID: 0}
+  m: {fileID: 5714024341792227127}
   btnNotPressed: {fileID: -4527129466267022211, guid: 26cd59384d6fc69408896d22713852da, type: 3}
   btnPressed: {fileID: 6576783372254293476, guid: a46c7abf2df264a4bbbd990d8345f378, type: 3}
+  lineMaker: {fileID: 0}
+--- !u!232 &6909601882588718181
+DistanceJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8720442877410825730}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 1
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_BreakAction: 3
+  m_AutoConfigureConnectedAnchor: 0
+  m_Anchor: {x: 0, y: 0.35003698}
+  m_ConnectedAnchor: {x: 0.000000013907751, y: 0.40624994}
+  m_AutoConfigureDistance: 0
+  m_Distance: 4
+  m_MaxDistanceOnly: 1

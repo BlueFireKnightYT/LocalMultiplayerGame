@@ -11,17 +11,15 @@ public class PlayerCollision : MonoBehaviour
     public Sprite btnNotPressed;
     public Sprite btnPressed;
 
+    public GameObject lineMaker;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("button"))
         {
-            gm.pressedButtons += 1;
+            gm.pressedButtons++;
             btnSprite = other.GetComponent<SpriteRenderer>();
             btnSprite.sprite = btnPressed;
-        }
-        else if (other.CompareTag("lever"))
-        {
-
         }
         else if (other.CompareTag("key"))
         {
@@ -36,6 +34,7 @@ public class PlayerCollision : MonoBehaviour
                 gm.enteredDoor++;
                 Debug.Log(gm.enteredDoor);
                 Destroy(this.gameObject);
+                Destroy(lineMaker);
             }
         }
         else if (other.CompareTag("lever"))

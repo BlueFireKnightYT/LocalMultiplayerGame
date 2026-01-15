@@ -7,12 +7,12 @@ public class AnimManager : MonoBehaviour
     [SerializeField]  SpriteRenderer sr;
     void Update()
     {
-        if (rb.linearVelocityX > 0)
+        if (rb.linearVelocityX > 0.2)
         {
             anim.SetBool("walking", true);
             sr.flipX = true;
         }
-        else if (rb.linearVelocityX < 0)
+        else if (rb.linearVelocityX < -0.2)
         {
             anim.SetBool("walking", true);
             sr.flipX = false;
