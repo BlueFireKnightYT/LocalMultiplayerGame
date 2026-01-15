@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -43,6 +44,11 @@ public class PlayerCollision : MonoBehaviour
             {
 
             }
+        }
+        else if (other.CompareTag("Respawn"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Debug.Log("Patatje");
         }
     }
     private void OnTriggerExit2D(Collider2D other)
