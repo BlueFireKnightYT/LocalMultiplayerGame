@@ -40,7 +40,7 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (other.CompareTag("lever"))
         {
-            if (m.performed == true)
+            if (m.interact == true)
             {
 
             }

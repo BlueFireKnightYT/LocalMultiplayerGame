@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
     [SerializeField] LayerMask jumpLayers;
     [SerializeField] Transform groundCheck;
 
-    public bool performed;
+    public bool interact;
 
     float InputX;
 
@@ -50,12 +50,12 @@ public class Movement : MonoBehaviour
     {
         if (context.started)
         {
-            performed = true;
+            interact = true;
             Debug.Log("on");
         }
         if (context.canceled)
         {
-            performed = false;
+            interact = false;
             Debug.Log("off");
         }
     }
