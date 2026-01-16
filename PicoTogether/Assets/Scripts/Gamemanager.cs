@@ -4,10 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class Gamemanager : MonoBehaviour
 {
-    public int pressedButtons = 0;
-    public int neededButtons = 0;
-    public int enteredDoor = 0;
+    public bool button1 = false;
+    public bool button2 = false;
+    private bool keyspawned = false;
     public bool key = false;
+    public int enteredDoor = 0;
 
     public SpriteRenderer doorSr;
     public GameObject pref_Key;
@@ -17,10 +18,10 @@ public class Gamemanager : MonoBehaviour
 
     void Update()
     {
-        if (pressedButtons == neededButtons)
+        if (button1 == true && button2 == true && keyspawned == false)
         {
             Instantiate(pref_Key, keyTrans);
-            pressedButtons = 9999;
+            keyspawned = true;
         }
 
         if (enteredDoor >= 2)

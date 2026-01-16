@@ -16,9 +16,15 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("button"))
+        if (other.CompareTag("button1"))
         {
-            gm.pressedButtons++;
+            gm.button1 = true;
+            btnSprite = other.GetComponent<SpriteRenderer>();
+            btnSprite.sprite = btnPressed;
+        }
+        else if (other.CompareTag("button2"))
+        {
+            gm.button2 = true;
             btnSprite = other.GetComponent<SpriteRenderer>();
             btnSprite.sprite = btnPressed;
         }
@@ -53,9 +59,15 @@ public class PlayerCollision : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("button"))
+        if (other.CompareTag("button1"))
         {
-            gm.pressedButtons -= 1;
+            gm.button1 = false;
+            btnSprite = other.GetComponent<SpriteRenderer>();
+            btnSprite.sprite = btnNotPressed;
+        }
+        else if (other.CompareTag("button2"))
+        {
+            gm.button2 = false;
             btnSprite = other.GetComponent<SpriteRenderer>();
             btnSprite.sprite = btnNotPressed;
         }

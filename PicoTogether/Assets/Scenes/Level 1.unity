@@ -297,6 +297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8308204672858774562, guid: 2045297fc7851f541a920e059bb5f7e6, type: 3}
+      propertyPath: m_TagString
+      value: button2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2082,6 +2086,10 @@ PrefabInstance:
     - target: {fileID: 8308204672858774562, guid: 2045297fc7851f541a920e059bb5f7e6, type: 3}
       propertyPath: m_Name
       value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308204672858774562, guid: 2045297fc7851f541a920e059bb5f7e6, type: 3}
+      propertyPath: m_TagString
+      value: button1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
