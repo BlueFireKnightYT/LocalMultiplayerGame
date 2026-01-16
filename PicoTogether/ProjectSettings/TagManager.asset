@@ -5,10 +5,11 @@ TagManager:
   serializedVersion: 3
   tags:
   - player
-  - button
   - key
   - door
   - lever
+  - button1
+  - button2
   layers:
   - Default
   - TransparentFX
