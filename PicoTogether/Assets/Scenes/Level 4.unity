@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 8308204672858774562, guid: 2045297fc7851f541a920e059bb5f7e6, type: 3}
+      propertyPath: m_TagString
+      value: button1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -499,7 +503,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 18
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 21
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -569,7 +573,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 17
-      m_TileSpriteIndex: 17
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -879,7 +883,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 2
+      m_TileSpriteIndex: 17
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -939,7 +943,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -1236,8 +1240,8 @@ Tilemap:
     m_Data: {fileID: 6219285816902648709, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 8400509269096406361, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -3147750102568508241, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 17
     m_Data: {fileID: 480515321064401385, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 14
@@ -1254,28 +1258,28 @@ Tilemap:
     m_Data: {fileID: 8020169105554827903, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 3382213792637615925, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 1678398437302803237, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 1719120907073177685, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: -8348347508745854655, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 797697571190096586, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
+    m_Data: {fileID: -3147750102568508241, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1880574174986689298, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
+    m_Data: {fileID: 797697571190096586, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -4685299875807011219, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -3352961294919692095, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1880574174986689298, guid: 53b0ceaadfb11f646abb28a08fafef09, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 75
     m_Data:
@@ -1971,6 +1975,10 @@ PrefabInstance:
     - target: {fileID: 8308204672858774562, guid: 2045297fc7851f541a920e059bb5f7e6, type: 3}
       propertyPath: m_Name
       value: Button (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308204672858774562, guid: 2045297fc7851f541a920e059bb5f7e6, type: 3}
+      propertyPath: m_TagString
+      value: button2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
