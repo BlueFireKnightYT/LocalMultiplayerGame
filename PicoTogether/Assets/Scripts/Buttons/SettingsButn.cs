@@ -4,16 +4,19 @@ using static UnityEngine.Rendering.DebugUI;
 public class SettingsButton : MonoBehaviour
 {
     public GameObject settingsPanel;
-    private object activeSelf;
-
+    
     public void OpenSettings()
     {
-        settingsPanel.SetActive(!settingsPanel.activeSelf);
-
         if (settingsPanel.activeSelf == true)
-            Time.timeScale = 0f;
-        else
+        { 
             Time.timeScale = 1f;
+            settingsPanel.SetActive(false);
+        }
+        else
+        { 
+            Time.timeScale = 0f;
+            settingsPanel.SetActive(true);
+        }
     }
     public void ReturnToMenu()
     {
