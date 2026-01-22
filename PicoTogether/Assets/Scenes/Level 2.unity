@@ -1989,6 +1989,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3757057536700990911, guid: 149ba4d3e79a06d429bd747a357cb6f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5181946837538108557, guid: 149ba4d3e79a06d429bd747a357cb6f0, type: 3}
       propertyPath: m_Name
       value: Respawn
@@ -2442,11 +2446,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2354821337787584393, guid: 6011e97fae076064f8373109557c2bd9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.55
+      value: 7.555
       objectReference: {fileID: 0}
     - target: {fileID: 2354821337787584393, guid: 6011e97fae076064f8373109557c2bd9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.11
+      value: -2.166
       objectReference: {fileID: 0}
     - target: {fileID: 2354821337787584393, guid: 6011e97fae076064f8373109557c2bd9, type: 3}
       propertyPath: m_LocalPosition.z
